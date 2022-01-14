@@ -1,0 +1,48 @@
+Desafio | Tester API
+
+-> Esta API serve para registrar usuários, onde você pode fazer as requisições para retornar, adicionar, filtrar e atualizar os registros.
+
+# ROTAS
+- Retorna todos os usuários: 
+Método: GET
+URL: https://mighty-ridge-77536.herokuapp.com/api/user
+
+- Filtra os usuários por ID
+Método: GET
+URL: https://mighty-ridge-77536.herokuapp.com/api/user/{id}
+
+- Adiciona um usuário
+Método: POST
+URL: https://mighty-ridge-77536.herokuapp.com/api/user
+Devem ser passados por JSON os seguintes paramentros:
+-> username
+-> password
+-> email
+-> active
+
+- Atualiza um usuário
+Método: PUT
+URL: https://mighty-ridge-77536.herokuapp.com/api/user/{id}
+Devem ser passado por JSON os seguintes paramentros:
+-> id
+-> username
+-> email
+-> password
+-> active
+
+# O QUE VOCÊ DEVE FAZER
+* Adicionar um ou mais usuários;
+* Filtrar usuários;
+* Atualizar usuários.
+
+# O QUE SERÁ VALIDADO
+* Se foi executada todas as rotas na API;
+* A descrição do bug.
+
+# COMO SALVAR E ENVIAR O TESTE
+* Você deve criar uma pasta no postman ou insomnia, salvando as requisições dentro desta pasta e exporta-la (.json ou .yaml).
+
+Escreva a descrição do bug, caso encontrado, utilizando a área Resposta do Participante.
+
+-> Resposta do participante
+

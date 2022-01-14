@@ -1,0 +1,18 @@
+@startuml All Use Cases
+skinparam actorStyle awesome
+left to right direction
+
+User << Human >>
+
+package "Use Cases" {
+    usecase "Create Register" as create
+    usecase "Edit Register" as edit
+    usecase "Filter Registry" as filter
+    usecase "Delete Register" as delete
+}
+
+User ---> create
+User ---> edit
+User ---> filter
+User ---> delete
+@enduml

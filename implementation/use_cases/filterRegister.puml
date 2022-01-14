@@ -1,0 +1,29 @@
+@startuml Filter Registry
+skinparam actorStyle awesome
+top to bottom direction
+
+User << Human >>
+usecase "Filter Registry" as filter
+
+usecase Filter as "
+..Setup..
+Visit application address.
+..Procedure..
+Add two or more registers by
+providing the necessary information.
+--
+Check if there's visual feedback
+about information's persistency.
+--
+Click on the combo box to select the type
+of filter to use and in the search field
+enter the information which is being searched.
+--
+Check if there's visual feedback
+about information's existence.
+..Teardown..
+Close the application."
+
+User ---> filter
+
+@enduml

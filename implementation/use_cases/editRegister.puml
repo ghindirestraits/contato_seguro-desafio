@@ -1,0 +1,28 @@
+@startuml Edit Register
+skinparam actorStyle awesome
+top to bottom direction
+
+User << Human >>
+usecase "Edit Register" as edit
+
+usecase Edit as "
+..Setup..
+Visit application address.
+..Procedure..
+Click on the 'add' button
+and provide the necessary information.
+--
+Check if there's visual feedback
+about information's persistency.
+--
+Click on the 'edit' button and
+modify the desired information.
+--
+Check if there's visual feedback
+about information's persistency.
+..Teardown..
+Close the application."
+
+User ---> edit
+
+@enduml

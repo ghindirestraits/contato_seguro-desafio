@@ -1,0 +1,26 @@
+@startuml Delete Register
+skinparam actorStyle awesome
+top to bottom direction
+
+User << Human >>
+usecase "Delete Register" as delete
+
+usecase Delete as "
+..Setup..
+Visit application address.
+..Procedure..
+Click on the 'add' button
+and provide the necessary information.
+--
+Check if there's visual feedback
+about information's persistency.
+--
+Click on the 'delete' button.
+--
+Check if there's visual feedback
+about information's deletion.
+..Teardown..
+Close the application."
+
+User ---> delete
+@enduml

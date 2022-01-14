@@ -1,0 +1,23 @@
+{
+  "name": "contato_seguro-desafio",
+  "version": "1.0.0",
+  "description": "Project dedicated to hold test cases and procedures for the Contato Seguro's Tests Analyst selection process",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghindirestraits/contato_seguro-desafio.git"
+  },
+  "author": "Gabriel Heberle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghindirestraits/contato_seguro-desafio/issues"
+  },
+  "homepage": "https://github.com/ghindirestraits/contato_seguro-desafio#readme",
+  "devDependencies": {
+    "cypress": "^9.2.1",
+    "faker": "^5.5.3"
+  }
+}

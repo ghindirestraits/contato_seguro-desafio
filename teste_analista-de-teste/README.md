@@ -35,6 +35,13 @@ Responda aqui quais foram suas dificuldades e/ou possíveis melhorias.
 
 Utilizou-se o pacote Node `http-server` a fim de executar o __CRUD__. O endereço encontra-se em `implementation/test_cases/cypress.json`.
 
+### Possíveis Melhorias
+
+1. Todos _feedbacks_ visuais permanecem na tela após alguma ação ser executada, sendo necessária intervenção do usuário para que os mesmos sejam fechados. Desta forma, após adicionar um alterar um registro, por exemplo, os alertas persistirão na tela, podendo o usuário executar outras atividades. __Sugestão:__ alterar implementação a fim de que os alertas exijam que sejam fechados/confirmado para que o usuároi prossiga com suas ações.
+1. Sempre que o usuário entra com um novo registro, não é verificado se o email é válido (se possui uma estrutura como _example@example.com.br_). __Sugestão:__ implementar verificação de estrutura de email no _backend_.
+1. A entrada de dados para o campo __Data de nascimento__ utiliza o modelo de data norte-americano. Já a exibição deste mesmo dado na lista de registros segue o padrão pt_BR. __Sugestão:__ alterar o backend para que seja possível entrar com datas no modelo pt_BR.
+1. Quando deseja-se pesquisar por datas de nascimento através do campo de busca, é necessário que se escreva a data no format `YYYY-MM-DD`. Além de ser extremamente pouco intuitivo, não corresponde com nenhum dos modelos utilizados anteriormente (entrada e exibição de dados. __Sugestão:__ alterar o backend para que utilize o mesmo formato da inserção de dados (de preferência pt_BR).
+
 ### Relatório de _Bugs_
 
 #### __1 - Dado não persiste após edição__
